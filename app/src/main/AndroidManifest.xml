@@ -28,7 +28,7 @@
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ClubsActivity" />
-        <activity android:name=".ClubActivity"></activity>
+        <activity android:name=".ClubActivity" />
     </application>
 
 </manifest>

@@ -17,36 +17,22 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
+            android:id="@+id/Ll2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:gravity="end"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent">
 
             <ImageButton
                 android:id="@+id/imageButton4"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="67dp"
                 android:layout_weight="1"
                 android:onClick="onClubsListButtonClicked"
                 app:srcCompat="@drawable/ic_menu_share"
                 tools:layout_editor_absoluteX="0dp"
                 tools:layout_editor_absoluteY="56dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/Ll2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent">
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="TextView"
-                tools:text="COUCCOU CEST MOI" />
 
             <ListView
                 android:id="@+id/clubsActivities"
@@ -59,8 +45,8 @@
                 app:layout_constraintStart_toStartOf="parent">
 
             </ListView>
-        </LinearLayout>
 
+        </LinearLayout>
     </GridLayout>
 
 </android.support.constraint.ConstraintLayout>
