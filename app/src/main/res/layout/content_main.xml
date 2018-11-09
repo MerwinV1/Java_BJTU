@@ -8,8 +8,8 @@
     tools:context="com.bjtu.java.bjtugymclubs.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
-    <GridLayout
-        android:id="@+id/gridLayout2"
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
         android:layout_width="0dp"
         android:layout_height="513dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -17,36 +17,18 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
+            android:id="@+id/L1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <ImageButton
                 android:id="@+id/imageButton4"
-                android:layout_width="0dp"
-                android:layout_height="67dp"
+                android:layout_width="wrap_content"
+                android:layout_height="307dp"
                 android:layout_weight="1"
-                android:onClick="onClubsListButtonClicked"
-                app:srcCompat="@drawable/ic_menu_share"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="56dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/Ll2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent">
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="TextView"
-                tools:text="COUCCOU CEST MOI" />
+                android:background="@drawable/sports"
+                android:onClick="onClubsListButtonClicked" />
 
             <ListView
                 android:id="@+id/clubsActivities"
@@ -54,13 +36,14 @@
                 android:layout_height="match_parent"
                 android:layout_marginBottom="8dp"
                 android:layout_weight="1"
-                app:layout_constraintBottom_toBottomOf="@+id/gridLayout2"
+                android:baselineAligned="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
 
             </ListView>
+
         </LinearLayout>
 
-    </GridLayout>
+    </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

@@ -25,17 +25,17 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/clubName"
                 android:layout_width="match_parent"
                 android:layout_height="38dp"
-                android:text="TextView"
+                android:text="Club Name"
                 tools:text="Club Name" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/clubDescription"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:text="TextView"
+                android:text="Club Description"
                 tools:text="Club Description" />
 
             <CalendarView
