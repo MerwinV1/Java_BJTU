@@ -16,8 +16,10 @@
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -34,14 +36,20 @@
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="75dp"
                 android:text="TextView"
                 tools:text="Club Description" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Training hours:\nMonday: 8pm - 10pm\nFriday: 3am - 5am" />
 
             <CalendarView
                 android:id="@+id/calendarView2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="295dp" />
 
         </LinearLayout>
     </GridLayout>
