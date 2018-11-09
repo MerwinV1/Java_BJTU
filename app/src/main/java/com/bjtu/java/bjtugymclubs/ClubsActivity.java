@@ -19,7 +19,7 @@ public class ClubsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_clubs);
 
-        String[] clubs = new String[] {
+        final String[] clubs = new String[] {
                 "Soccer Club",
                 "Karate Club"
         };
@@ -29,6 +29,7 @@ public class ClubsActivity extends AppCompatActivity {
 
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(ClubsActivity.this, ClubActivity.class);
+                intent.putExtra("CLUB_NAME", clubs[position]);
                 startActivity(intent);
             }
         });

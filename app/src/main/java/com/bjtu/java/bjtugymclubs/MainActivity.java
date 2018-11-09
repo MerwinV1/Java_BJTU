@@ -36,18 +36,22 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        String[] Activities = new String[] {
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mauris risus, pellentesque vel enim ut, tristique porta nulla. Nunc varius. ",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mauris risus, pellentesque vel enim ut, tristique porta nulla. Nunc varius."
+        final String[] news = new String[] {
+                "France won the world cup!!!!",
+                "A new karate club just opened",
+                "How to swim like a pro",
+                "10 simple tricks to run faster"
         };
+
         final ListView listV = findViewById(R.id.clubsActivities);
-        final List<String> clubsNews = new ArrayList<String>(Arrays.asList(Activities));
+        final List<String> clubsNews = new ArrayList<String>(Arrays.asList(news));
         final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>
                 (this, android.R.layout.simple_list_item_1, clubsNews);
         listV.setAdapter(arrayAdapter);
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     @Override
