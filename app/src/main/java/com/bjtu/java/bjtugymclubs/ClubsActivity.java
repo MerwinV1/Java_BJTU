@@ -21,7 +21,9 @@ public class ClubsActivity extends AppCompatActivity {
 
         final String[] clubs = new String[] {
                 "Soccer Club",
-                "Karate Club"
+                "Karate Club",
+                "Basketball Club",
+                "Tennis Club"
         };
 
         final ListView listV = findViewById(R.id.clubsList);
