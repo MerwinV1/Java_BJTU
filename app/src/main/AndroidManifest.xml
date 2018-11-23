@@ -30,6 +30,7 @@
         <activity android:name=".ClubsActivity" />
         <activity android:name=".ClubActivity" />
         <activity android:name=".ReservationActivity" />
+        <activity android:name=".TrainerActivity" />
     </application>
 
 </manifest>

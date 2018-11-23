@@ -36,5 +36,15 @@ public class ClubActivity extends AppCompatActivity {
             }
         });
 
+
+        final CardView trainerCard = findViewById(R.id.CardTrainer);
+        trainerCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ClubActivity.this, TrainerActivity.class);
+                intent.putExtra("CLUB_NAME", message);
+                startActivity(intent);
+            }
+        });
     }
 }
