@@ -25,23 +25,28 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/clubName"
+                android:textAlignment="center"
+                android:id="@+id/ClubName"
                 android:layout_width="match_parent"
-                android:layout_height="38dp"
+                android:layout_height="38sp"
                 android:text="Club Name"
                 tools:text="Club Name" />
 
             <TextView
-                android:id="@+id/clubDescription"
+                android:id="@+id/Description"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:text="Club Description"
-                tools:text="Club Description" />
+                android:layout_height="80sp"
+                android:text="Réserver une séance"/>
 
             <CalendarView
                 android:id="@+id/calendarView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
 
         </LinearLayout>
     </GridLayout>
