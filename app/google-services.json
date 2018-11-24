@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "136739923532",
+    "firebase_url": "https://bjtu-gym-clubs.firebaseio.com",
+    "project_id": "bjtu-gym-clubs",
+    "storage_bucket": "bjtu-gym-clubs.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:136739923532:android:747339ab84235caa",
+        "android_client_info": {
+          "package_name": "com.bjtu.java.bjtugymclubs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "136739923532-f8a0r925hnr3t5ic1npej8h43ovum97a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvIT4s-v12ammv5Fg4zxNMtQvYBGoF1CU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
